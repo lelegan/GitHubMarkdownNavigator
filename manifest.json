@@ -1,0 +1,14 @@
+{
+    "name": "GitHub Markdown Navigator",
+    "version": "0.1",
+    "description": "Helps navigating markdown files in GitHub by providing a table of contents.",
+    "manifest_version": 2,
+    "permissions": [],
+    "content_scripts": [
+        {
+          "matches": ["*://github.com/*"],
+          "css": ["navCss.css"],
+          "js": ["contentScript.js"]
+        }
+      ]
+}
