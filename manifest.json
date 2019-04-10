@@ -4,6 +4,9 @@
     "description": "Helps navigating markdown files in GitHub by providing a table of contents.",
     "manifest_version": 2,
     "permissions": [],
+    "icons": { 
+        "16": "open-book16.png",
+       "128": "open-book128.png" },
     "content_scripts": [
         {
           "matches": ["*://github.com/*"],
