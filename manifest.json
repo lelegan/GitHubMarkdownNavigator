@@ -1,8 +1,9 @@
 {
+    "manifest_version": 2,
     "name": "GitHub Markdown Navigator",
     "version": "0.1",
     "description": "Helps navigating markdown files in GitHub by providing a table of contents.",
-    "manifest_version": 2,
+    "homepage_url": "https://github.com/timbussmann/GitHubMarkdownNavigator",
     "permissions": [],
     "icons": { 
         "16": "open-book16.png",
