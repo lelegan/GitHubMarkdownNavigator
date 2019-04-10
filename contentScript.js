@@ -34,8 +34,9 @@ console.log("hello from contentscript");
     function addTitleToNav(titleLink, parent){
         var link = document.createElement("a");
         link.setAttribute("href", titleLink.href);
-        link.classList.add("level"+titleLink.parentElement.tagName.substring(1));
-        link.innerText = titleLink.nextSibling.nodeValue; //the title value
+        var titleElement = titleLink.parentElement;
+        link.classList.add("level"+titleElement.tagName.substring(1));
+        link.innerText = titleElement.innerText; //the title value
         parent.appendChild(link);
     }
 })();
@@ -44,4 +45,3 @@ console.log("hello from contentscript");
 //TODO: help differentiate between multi-line titles & next sibling
 //TODO: make nav expandable on small screens
 //TODO: underline highest level title
-//!!!TODO: handling titles with links in them
